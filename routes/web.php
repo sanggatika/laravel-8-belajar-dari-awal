@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // menampilkan view "resources - views"
+    // . = folder
     return view('welcome');
+});
+
+// Route 1
+// Route::get('/home'. fn () => view('home')); || PHP 7.4
+
+// Route 2
+// $appName = "Laravel 8 - Belajar Dari Awal";
+// Route::view('/home', 'home', ['appName' => $appName]); // || Laravel 8
+
+// Route 3
+Route::get('/home', function () {
+    $appName = "Laravel 8 - Belajar Dari Awal";
+    return view('home',[
+        'appName' => $appName,
+    ]);
 });
