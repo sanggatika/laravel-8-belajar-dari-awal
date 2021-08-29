@@ -35,7 +35,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/dashboard', function () {
-    $appName = "Laravel 8 - Belajar Dari Awal";
+    $appName = "Laravel 8";
     return view('main_contents.page_faq',[
         'appName' => $appName,
     ]);
