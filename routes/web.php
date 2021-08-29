@@ -33,3 +33,10 @@ Route::get('/home', function () {
         'appName' => $appName,
     ]);
 });
+
+Route::get('/dashboard', function () {
+    $appName = "Laravel 8 - Belajar Dari Awal";
+    return view('dashboard',[
+        'appName' => $appName,
+    ]);
+});
